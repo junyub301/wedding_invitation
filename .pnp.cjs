@@ -50,6 +50,7 @@ const RAW_RUNTIME_STATE =
           ["react-dom", "virtual:5d9c662fffdb090b6406e1651123068e9268e6a51c5fe53014edcb384e73e38635916b92e7b13e73f07e0a494b768f45152d5d1109c950fa8d3fee7fb7818879#npm:18.2.0"],\
           ["react-scripts", "virtual:5d9c662fffdb090b6406e1651123068e9268e6a51c5fe53014edcb384e73e38635916b92e7b13e73f07e0a494b768f45152d5d1109c950fa8d3fee7fb7818879#npm:5.0.1"],\
           ["sass", "npm:1.72.0"],\
+          ["swiper", "npm:11.0.7"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
@@ -17444,6 +17445,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["swiper", [\
+      ["npm:11.0.7", {\
+        "packageLocation": "../../.yarn/berry/cache/swiper-npm-11.0.7-d14c0a02a9-10c0.zip/node_modules/swiper/",\
+        "packageDependencies": [\
+          ["swiper", "npm:11.0.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["symbol-tree", [\
       ["npm:3.2.4", {\
         "packageLocation": "../../.yarn/berry/cache/symbol-tree-npm-3.2.4-fe70cdb75b-10c0.zip/node_modules/symbol-tree/",\
@@ -18610,6 +18620,7 @@ const RAW_RUNTIME_STATE =
           ["react-dom", "virtual:5d9c662fffdb090b6406e1651123068e9268e6a51c5fe53014edcb384e73e38635916b92e7b13e73f07e0a494b768f45152d5d1109c950fa8d3fee7fb7818879#npm:18.2.0"],\
           ["react-scripts", "virtual:5d9c662fffdb090b6406e1651123068e9268e6a51c5fe53014edcb384e73e38635916b92e7b13e73f07e0a494b768f45152d5d1109c950fa8d3fee7fb7818879#npm:5.0.1"],\
           ["sass", "npm:1.72.0"],\
+          ["swiper", "npm:11.0.7"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
