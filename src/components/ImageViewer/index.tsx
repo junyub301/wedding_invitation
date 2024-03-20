@@ -4,6 +4,7 @@ import classNames from 'classnames/bind'
 import './swiper.css'
 
 import 'swiper/css'
+import Dimmed from '../shared/Dimmed'
 
 const cx = classNames.bind(styles)
 
@@ -20,7 +21,7 @@ export default function ImageViewer({
 }) {
   if (!open) return null
   return (
-    <div className={cx('dimmed')}>
+    <Dimmed>
       <CloseButton className={cx('icon_close')} onClose={onClose} />
       <Swiper
         spaceBetween={20}
@@ -28,13 +29,13 @@ export default function ImageViewer({
         loop={true}
         initialSlide={selectedIdx}
       >
-        {images.map((src) => (
-          <SwiperSlide>
+        {images.map((src, idx) => (
+          <SwiperSlide key={idx}>
             <img src={`/assets/images/${src}.jpg`} alt="이미지 뷰어" />
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </Dimmed>
   )
 }
 
