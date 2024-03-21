@@ -1,5 +1,5 @@
 const CracoAlias = require('craco-alias')
-
+const FontPreloadPlugin = require('webpack-font-preload-plugin')
 module.exports = {
   plugins: [
     {
@@ -10,4 +10,13 @@ module.exports = {
       },
     },
   ],
+  webpack: {
+    plugins: {
+      add: [
+        new FontPreloadPlugin({
+          extensions: ['woff2'],
+        }),
+      ],
+    },
+  },
 }

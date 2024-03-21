@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'NanumMuGungHwa';
   src:
-    url('../assets/fonts/NanumMuGungHwa.woff2') format('woff2'),
-    url('../assets//fonts//NanumMuGungHwa.woff') format('woff'),
-    url('../assets//fonts//NanumMuGungHwa.ttf') format('truetype');
+    url('../assets/fonts/subset-NanumMuGungHwa.woff2') format('woff2'),
+    url('../assets//fonts/subset-NanumMuGungHwa.woff') format('woff'),
+    url('../assets//fonts/subset-NanumMuGungHwa.ttf') format('truetype');
+  font-display: fallback;
 }
