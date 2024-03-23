@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './Calendar.module.scss'
 import classNames from 'classnames/bind'
 import Section from '@shared/Section'
@@ -5,6 +6,7 @@ import { format, parseISO } from 'date-fns'
 import { ko } from 'date-fns/locale'
 import { DayPicker } from 'react-day-picker'
 import 'react-day-picker/dist/style.css'
+
 const cx = classNames.bind(styles)
 
 const css = `
@@ -29,7 +31,7 @@ const css = `
 }
 `
 
-export default function Calendar({ date }: { date: string }) {
+function Calendar({ date }: { date: string }) {
   const weddingDate = parseISO(date)
   return (
     <Section
@@ -57,3 +59,5 @@ export default function Calendar({ date }: { date: string }) {
     </Section>
   )
 }
+
+export default React.memo(Calendar)
