@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind'
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 
 import FullScreenMessage from '@shared/FullScreenMessage'
 import styles from './App.module.scss'
@@ -18,19 +18,14 @@ import useWedding from './hooks/useWedding'
 const cx = classNames.bind(styles)
 
 function App() {
-  const [count, setCount] = useState<number>(0)
-
-  const { wedding, loading, error } = useWedding()
-
-  if (loading) {
-    return <FullScreenMessage type="loading" />
-  }
+  const { wedding, error } = useWedding()
 
   if (error) {
     return <FullScreenMessage type="error" />
   }
 
-  if (wedding === null) return null
+  if (wedding == null) return null
+
   const {
     date,
     galleryImages,
@@ -41,13 +36,6 @@ function App() {
   } = wedding
   return (
     <div className={cx('container')}>
-      <button
-        style={{ position: 'fixed', top: '0' }}
-        type="button"
-        onClick={() => setCount((pre) => pre + 1)}
-      >
-        +{count}
-      </button>
       <Heading date={date} />
       <Video />
       <Intro
